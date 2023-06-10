@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Homepage</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      /* Add any custom CSS here */
+      .image-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+        overflow: hidden;
+      }
+
+      .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+      }
+
+      .image-overlay h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .image-overlay p {
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+      <nav class="container mx-auto py-4 px-6">
+        <div class="flex items-center justify-between">
+          <div class="text-2xl font-bold text-gray-800">Logo</div>
+          <ul class="flex space-x-4">
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">Home</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">About</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">Services</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-6">
+      <div class="image-container">
+        <img src="https://cdn.pixabay.com/photo/2017/08/06/13/37/cat-2592570_640.jpg" alt="Image Description">
+        <div class="image-overlay">
+          <h2>Welcome to Our Website</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <!-- Short Header and Description -->
+      <section class="my-12">
+        <div class="container mx-auto text-center">
+          <h3 class="text-3xl font-bold mb-4">Welcome To Our Landing Page</h3>
+          <p class="text-lg text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, iure aliquam, inventore dolor repudiandae quis exercitationem, suscipit saepe voluptas nesciunt laudantium consequuntur porro. Animi cumque sed mollitia facilis consequuntur, possimus officiis nam provident fuga omnis cum ratione quisquam, rem dicta, dolor corrupti consectetur eos numquam architecto. Atque officiis mollitia maxime aut explicabo esse molestiae nemo quam dolore iure impedit rem aliquam qui sequi voluptate recusandae in asperiores voluptates omnis, debitis blanditiis eos eum sit! Laborum, iste, minima est odit cum temporibus ipsa ut tempora, qui aspernatur esse fugit illum iusto cupiditate? Eos nulla consectetur non deserunt voluptatibus blanditiis mollitia, ipsam tempore fugit ratione perferendis, asperiores atque illum porro cum iste praesentium unde omnis, expedita harum aspernatur. Itaque sint ut reprehenderit harum tempore perspiciatis nulla recusandae deleniti in autem, necessitatibus corrupti facere. Reiciendis a quidem temporibus quisquam commodi, soluta animi perspiciatis, veniam voluptate recusandae, praesentium nobis optio quis nostrum corporis architecto aliquam magnam facere porro delectus modi dicta ipsa. Voluptatem laboriosam aliquam est beatae, accusamus dolores in et commodi animi, deserunt dicta adipisci vel inventore architecto expedita a labore eveniet! Dolorem id inventore, quasi delectus excepturi minima earum laudantium neque. Deleniti veritatis quia sit consectetur animi, minima tempora doloremque reiciendis impedit!</p>
+        </div>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section class="my-8 bg-zinc-400">
+        <div class="container mx-auto flex flex-wrap items-center">
+          <div class="w-full md:w-1/2">
+            <img src="https://cdn.pixabay.com/photo/2023/03/22/21/30/cat-7870595_640.jpg" alt="Contact Image" class="w-full md:max-w-sm mx-auto mb-6 rounded-md">
+          </div>
+          <div class="w-full md:w-1/2 md:pl-10">
+            <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
+            <p class="text-lg text-gray-700 mb-4">Feel free to get in touch with us for any inquiries or questions.</p>
+            <ul class="mb-4">
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                </svg>
+                <span class="text-gray-600">Email: example@example.com</span>
+              </li>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                </svg>
+                <span class="text-gray-600">Phone: +1 234 567 890</span>
+              </li>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                </svg>
+                <span class="text-gray-600">Address: 123 Street, City, Country</span>
+              </li>
+            </ul>
+            <div class="flex justify-center md:justify-start">
+              <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+                Contact Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4">
+      <div class="container mx-auto text-center text-gray-300">
+        &copy; 2023 Your Website. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
